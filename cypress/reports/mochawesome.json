@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 0,
+    "passes": 0,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-11-11T15:06:47.530Z",
+    "end": "2020-11-11T15:07:04.174Z",
+    "duration": 16644,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "62145dfe-c393-41c0-85e8-97a3e7bf52b0",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d5be7f62-e1f5-44ce-91a3-3f1b1a59ad06",
+          "title": "15 - [TELA DE FEEDBACK] Crie a opção para a pessoa jogadora poder jogar novamente",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "A pessoa deve ser redirecionada para tela inicial",
+              "fullTitle": "15 - [TELA DE FEEDBACK] Crie a opção para a pessoa jogadora poder jogar novamente A pessoa deve ser redirecionada para tela inicial",
+              "timedOut": null,
+              "duration": 15404,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(BUTTON_PLAY_AGAIN_SELECTOR).click();\ncy.get(INPUT_PLAYER_EMAIL_SELECTOR).should('exist');",
+              "err": {
+                "message": "CypressError: Timed out retrying: cy.click() failed because this element is disabled:\n\n<button class=\"correct\" data-testid=\"correct-answer\" type=\"button\" disabled=\"\">Andrew ...</button>\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '15 - [TELA DE FEEDBACK] Cri...'",
+                "estack": "CypressError: Timed out retrying: cy.click() failed because this element is disabled:\n\n<button class=\"correct\" data-testid=\"correct-answer\" type=\"button\" disabled=\"\">Andrew ...</button>\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '15 - [TELA DE FEEDBACK] Cri...'\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86206:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86161:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86193:17)\n    at Object.retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at retryActionability (http://localhost:3000/__cypress/runner/cypress_runner.js:65238:19)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120669:23)\n    at Function.Promise.attempt.Promise.try (http://localhost:3000/__cypress/runner/cypress_runner.js:117944:29)\n    at tryFn (http://localhost:3000/__cypress/runner/cypress_runner.js:77307:21)\n    at whenStable (http://localhost:3000/__cypress/runner/cypress_runner.js:77342:12)\n    at http://localhost:3000/__cypress/runner/cypress_runner.js:76892:16\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120669:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118605:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118662:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118707:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118786:18)\n    at Promise._fulfill (http://localhost:3000/__cypress/runner/cypress_runner.js:118731:18)",
+                "diff": null
+              },
+              "uuid": "aaad3e46-f95e-4809-852d-1e926a0bceb8",
+              "parentUUID": "d5be7f62-e1f5-44ce-91a3-3f1b1a59ad06",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "aaad3e46-f95e-4809-852d-1e926a0bceb8"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 15404,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": true,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
